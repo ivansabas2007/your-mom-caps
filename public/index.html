@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="YOUR MOM CAPS: gorras de estilo urbano para todos los días.">
+  <title>YOUR MOM CAPS | Gorras urbanas</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">YOUR MOM CAPS — ESTILO QUE HABLA POR TI</div>
+  <header class="site-header">
+    <a class="logo" href="/">YOUR MOM <span>CAPS®</span></a>
+   
+<nav aria-label="Navegación principal">
+  <a href="#catalogo">Catálogo</a>
+  <a href="#nosotros">Nosotros</a>
+</nav>
+
+<div class="header-actions">
+  <button id="account-toggle" class="cart-button" type="button">
+    Mi cuenta
+  </button>
+  <button id="cart-toggle" class="cart-button" type="button">
+    Bolsa <span id="cart-count">0</span>
+  </button>
+</div>
+
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">NUEVA COLECCIÓN · 2026</p>
+        <h1>Encuentra tu<br><em>propio estilo.</em></h1>
+        <p>Gorras para todos los días. Diseños urbanos, actitud auténtica y detalles que hacen la diferencia.</p>
+        <a class="button button-light" href="#catalogo">Explorar colección <span>↗</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Gorra negra de estilo urbano">
+     <img src="/images/products/01-iced-legacy.jpg" alt="Gorra Iced Legacy de YOUR MOM CAPS">
+        <span class="hero-stamp">FIND<br>YOUR<br>FIT.</span>
+      </div>
+      <div class="hero-bottom"><span>ESTILO SIN REGLAS</span><span>01 — 04 / COLECCIÓN</span></div>
+    </section>
+
+    <section id="catalogo" class="catalog section-wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">HECHAS PARA DESTACAR</p><h2>La colección<span>.</span></h2></div>
+        <p>Tu próxima gorra favorita está aquí.</p>
+      </div>
+      <div id="product-grid" class="product-grid">
+        <p class="loading">Cargando la colección…</p>
+      </div>
+      <p id="catalog-message" class="status-message" aria-live="polite"></p>
+    </section>
+
+    <section id="nosotros" class="manifesto">
+      <p class="eyebrow">NO SIGAS EL ESTILO. CREA EL TUYO.</p>
+      <h2>Tu cabeza.<br><em>Tus reglas.</em></h2>
+      <p>YOUR MOM CAPS nace para quienes expresan quiénes son hasta en los detalles.</p>
+    </section>
+  </main>
+  <footer><a class="logo" href="/">YOUR MOM <span>CAPS®</span></a><p>Estilo auténtico, todos los días.</p><small>© 2026 YOUR MOM CAPS · Proyecto escolar</small></footer>
+
+  <aside id="cart-panel" class="cart-panel" aria-label="Bolsa de compras" aria-hidden="true">
+    <div class="cart-head"><h2>Tu bolsa</h2><button id="cart-close" class="icon-button" aria-label="Cerrar bolsa">×</button></div>
+    <div id="cart-items" class="cart-items"><p>Tu bolsa está vacía.</p></div>
+    <div class="cart-foot"><div class="cart-total"><span>Total</span><strong id="cart-total">$0.00</strong></div><button id="checkout-button" class="button button-dark" type="button">Continuar compra</button><p class="cart-note">Demo escolar: el pago aún no está conectado.</p></div>
+  </aside>
+  <div id="cart-backdrop" class="backdrop"></div>
+
+  <section id="account-panel" class="account-panel" hidden aria-labelledby="account-title">
+    <div class="account-card">
+      <button id="account-close" class="icon-button" type="button" aria-label="Cerrar">×</button>
+
+      <p class="eyebrow">YOUR MOM CAPS®</p>
+      <h2 id="account-title">Mi cuenta</h2>
+
+      <div class="account-tabs">
+        <button id="show-login" type="button" class="button button-dark">Iniciar sesión</button>
+        <button id="show-register" type="button" class="button button-light">Crear cuenta</button>
+      </div>
+
+      <form id="login-form">
+        <label for="login-email">Correo electrónico</label>
+        <input id="login-email" name="email" type="email" autocomplete="email" required>
+
+        <label for="login-password">Contraseña</label>
+        <input id="login-password" name="password" type="password" autocomplete="current-password" required>
+
+        <button class="button button-dark" type="submit">Entrar</button>
+      </form>
+
+      <form id="register-form" hidden>
+        <label for="register-name">Nombre</label>
+        <input id="register-name" name="name" type="text" minlength="2" maxlength="80" autocomplete="name" required>
+
+        <label for="register-email">Correo electrónico</label>
+        <input id="register-email" name="email" type="email" maxlength="190" autocomplete="email" required>
+
+        <label for="register-password">Contraseña (mínimo 10 caracteres)</label>
+        <input id="register-password" name="password" type="password" minlength="10" maxlength="72" autocomplete="new-password" required>
+
+        <button class="button button-dark" type="submit">Crear mi cuenta</button>
+      </form>
+
+      <div id="account-status" class="status-message" aria-live="polite"></div>
+
+      <div id="account-logged-in" hidden>
+        <p>Sesión iniciada como <strong id="account-user-name"></strong></p>
+        <button id="logout-button" class="button button-dark" type="button">Cerrar sesión</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
